@@ -51,14 +51,15 @@
     transform: scale(1.5);
 }
 
+/*** EX10 ANIMAZIONI ****/
 .ex-10-icon {
-    animation-name: rotate;
+    animation-name: rotate-10;
     animation-iteration-count: infinite;
     animation-duration: 1.5s;
     animation-timing-function: linear;
 }
 
-@keyframes rotate {
+@keyframes rotate-10 {
     from {
         transform: rotate(360deg);
     }
@@ -68,14 +69,15 @@
     }
 }
 
+/*** EX11 ANIMAZIONI ****/
 .ex-11-icon:hover {
-    animation-name: rotate;
+    animation-name: rotate-11;
     animation-iteration-count: 1;
     animation-duration: 2s;
     animation-timing-function: ease-in;
 }
 
-@keyframes rotate {
+@keyframes rotate-11 {
     0% {
         transform: rotate(0deg);
     }
@@ -90,18 +92,14 @@
 }
 
 /*** EX12 TRANSIZIONI ****
-
 .ex-12-button:hover .ex-12-top-white{
     left: 69%;
     transition: 2s;
 }
-
 .ex-12-button:hover .ex-12-bottom-white {
     right: 69%;
     transition: 2s;
-} 
-*****/
-
+} *****/
 
 /*** EX12 ANIMAZIONI ****/
 .ex-12-button:hover .ex-12-top-white{
@@ -144,5 +142,92 @@
     }
 }
 
+/*** EX13 ANIMAZIONI ****/
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: scroll-top13;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
 
+@keyframes scroll-top13 {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    
+    20% {
+        left: 100%;
+        top: -10px;
+    }
+
+    35% {
+        left: 100%;
+        top: 80%;
+    }
+
+    60% {
+        left: -10px;
+        top: 80%;
+    }
+
+    75% {
+        left: -10px;
+        top: 50%;
+    }
+
+    90% {
+        left: -10px;
+        top: -10px;
+    }
+
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: scroll-bottom13;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes scroll-bottom13 {
+    0% {
+        right: 20%;
+        bottom: -10px;
+    }
+    
+    20% {
+        right: 100%;
+        bottom: -10px;
+    }
+
+    35% {
+        right: 100%;
+        bottom: 80%;
+    }
+
+    60% {
+        right: -10px;
+        bottom: 80%;
+    }
+
+    75% {
+        right: -10px;
+        bottom: 50%;
+    }
+
+    90% {
+        right: -10px;
+        bottom: -10px;
+    }
+
+    100% {
+        right: 20%;
+        bottom: -10px;
+    }
+}
 
