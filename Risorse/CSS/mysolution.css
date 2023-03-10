@@ -12,3 +12,8 @@
     border-radius: 50%;
     transition: 0.5s;
 }
+
+.ex-4-square:hover {
+    opacity: 0;
+    transition: 1s;
+}
