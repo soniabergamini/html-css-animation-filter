@@ -88,3 +88,61 @@
         transform: rotate(0deg);
     }
 }
+
+/*** EX12 TRANSIZIONI ****
+
+.ex-12-button:hover .ex-12-top-white{
+    left: 69%;
+    transition: 2s;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    right: 69%;
+    transition: 2s;
+} 
+*****/
+
+
+/*** EX12 ANIMAZIONI ****/
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: scroll-top;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes scroll-top {
+    0% {
+        left: 10%;
+    }
+    50%{
+        left: 69%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: scroll-bottom;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes scroll-bottom {
+    0% {
+        right: 20%;
+    }
+
+    50% {
+        right: 69%;
+    }
+
+    100% {
+        right: 20%;
+    }
+}
+
+
+
