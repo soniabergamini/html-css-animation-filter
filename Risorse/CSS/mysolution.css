@@ -50,3 +50,20 @@
     filter: grayscale(70%) sepia(40%);
     transform: scale(1.5);
 }
+
+.ex-10-icon {
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
